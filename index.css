@@ -350,16 +350,17 @@ p
 .trangch-group71 {
   top: 0px;
   left: 5px;
-  width: 1265px;
+  width: 100%;
   height: 194px;
   display: flex;
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
+
 }
 .trangch-text26 {
-  top: 50px;
-  left: 6%;
+  top: 20px;
+  left: 15%;
   color: rgba(80, 80, 80, 1);
   width: 372px;
   height: auto;
@@ -572,18 +573,18 @@ p
   text-decoration: none;
 }
 .trangch-group70 {
-  top: 0px;
+  top: 20px;
   left: 60%;
-  width: 282px;
-  height: 122.84137725830078px;
+  width: 100px;
+  height: 22.84137725830078px;
   display: flex;
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
 }
 .trangch-text42 {
-  top: 46.31724166870117px;
-  left: 4.547473508864641e-13px;
+  top: 27%;
+  left: 60%;
   color: rgba(80, 80, 80, 1);
   width: 282px;
   height: auto;
@@ -688,18 +689,25 @@ p
 }
 .trangch-group101 {
   top: 800px;
-  left: 6%;
-  width: fit-content;
+  margin-left: 6%;
+  width: 40%;
   height: 377px;
   display: flex;
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
 }
+.trangch-image3 {
+  top: 38%;
+  left: 60%;
+  width: 30%;
+  height: 15%;
+  position: absolute;
+}
 .trangch-group30 {
   top: 71px;
   left: 2px;
-  width: 476px;
+  width: 100%;
   height: 306px;
   display: flex;
   position: absolute;
@@ -709,7 +717,7 @@ p
 .trangch-group27 {
   top: 0px;
   left: 0px;
-  width: 476px;
+  width: 100%;
   height: 306px;
   display: flex;
   position: absolute;
@@ -719,7 +727,7 @@ p
 .trangch-group22 {
   top: 0px;
   left: 0px;
-  width: 476px;
+  width: 100%;
   height: 306px;
   display: flex;
   position: absolute;
@@ -763,7 +771,7 @@ p
   text-decoration: none;
 }
 .trangch-group105 {
-  top: 1220px;
+  top: 1200px;
   left: 6%;
   display: flex;
   position: absolute;
@@ -1287,6 +1295,7 @@ p
   position: absolute;
 }
 .trangch-frame33 {
+  margin: 0;
   top: 1550px;
   left: 0px;
   width: 100%;
@@ -1320,7 +1329,7 @@ p
 }
 .trangch-iconex-broken-receipt {
   top: 44px;
-  left: 35.5%;
+  left: 38.5%;
   width: 24px;
   height: 24px;
   display: flex;
@@ -1616,6 +1625,9 @@ p
   width: 20%;
   position: absolute;
 }
+.trangch-image10{
+  left: 40%;
+}
 .trangch-image4 {
   top: 36px;
   left: 59px;
@@ -1624,12 +1636,7 @@ p
   position: absolute;
   size: 18%;
 }
-.trangch-image3 {
-  top: 35%;
-  right: 3%;
-  width: 40%;
-  position: absolute;
-}
+
 
 /*customize*/
 .modal {
@@ -1671,8 +1678,25 @@ p
   cursor: pointer;
 }
 
+.info1{
+  width: 30%;
+  left: 5%;
+}
+.info2{
+  width: 30%;
+  left: 5%;
+}
+.info3{
+  width: 30%;
+  left: 5%;
+}
+
 /*======= Responsive =========*/
 @media screen and (max-width: 900px) {
+  .trangch-group101{
+    margin-right: 5%;
+    width: 90%;
+  }
   .trangch-rectangle119{
     visibility: hidden;
   }
@@ -1745,7 +1769,7 @@ p
     left: 45%;
   }
   .trangch-iconex-broken-receipt {
-    left: 18.5%;
+    left: 45%;
   }
 
   .trangch-text90{
@@ -1757,14 +1781,23 @@ p
   .trangch-users {
     left: 77%;
   }
-
+  .trangch-group71{
+    height: 345px;
+  }
   .trangch-text26{
-    left: 0;
+    left: 8%;
+  }
+  .trangch-text42 {
+    top: 62%;
+    left: 8%;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .trangch-iconex-broken-receipt{
-    left: 37%;
+    left: 40.5%;
+  }
+  .trangch-iconex-broken-case {
+    left: 10%;
   }
 }
