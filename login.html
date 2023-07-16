@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="split-screen">
+        <div class="left">
+            <section class="copy">
+                <a href="index.html">
+                    <img src="image/logo.png" alt="logo company">
+                </a> <br>
+                <img src="image/login.png" alt="image">
+                
+            </section>
+        </div>
+        <div class="middle-line">
+            <img src="./image/Line 2.png" alt="">
+        </div>
+        <div class="right">
+            <form>
+                <section class="copy">
+                    <h2>Đăng nhập</h2>
+                    <!-- <div class="login-container">
+                        <p>Don't have an account?<a href="signup.html">
+                        <strong>Sign up</strong></a></p>
+                    </div> -->
+                </section>
+                
+                <div class="input-container email">
+                    <label for="email"><b>Tên đăng nhập (Email, SĐT, MSNV)</b></label>
+                    <input type="text" name="email" id="email" placeholder="Type your email or phone number"required>
+                </div>
+                <div class="input-container password">
+                    <label for="password"><b>Mật khẩu</b></label>
+                    <input type="password" name="password" id="password" 
+                    placeholder="Type your password" required>
+                    <i class="far fa-eye-slash"></i>
+                </div>
+                <div class="input-container cta">
+                    <!-- <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>Remember me
+                    </label> -->
+                    <a class="forgot-pass" href="#">Quên mật khẩu</a>
+                </div>
+                <div class="btn-container">
+                    <button class="signup-btn" type="submit">Log in</button>
+                </div>                
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

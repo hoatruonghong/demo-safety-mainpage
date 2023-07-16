@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root{
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: #4C70FF;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 30;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+.small{
+    font-size: 80%;
+    text-align: center;
+}
+.split-screen{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    height: 200px;
+}
+
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    background: #fff;
+    background-size: cover;
+}
+.left .copy{
+    color: #fff;
+    text-align: center;
+}
+.left p{
+    font-size: 400;
+}
+.left img{
+    width: 80%;
+}
+.right .copy{
+    color: black;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.right .copy p{
+    margin: 1.5rem 0;
+    font-size: 0.875rem;
+}
+.right form{
+    width: 400px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.75rem;
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 16;
+    font-weight: 400;
+}
+.input-container.password{
+    position: relative;
+}
+.input-container.password i{
+    position: absolute;
+    top: 42px;
+    right: 16px;
+}
+
+
+.checkbox-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox-container{
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 1.25rem 0;
+}
+.checkbox-container input:checked~.checkmark{
+    background-color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+}
+.checkmark{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border: 1px solid #111;
+    border-radius: 2px;
+    top: -4px;
+    left: 0;
+}
+.checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox-container input:checked~.checkmark::after{
+    display: block;
+}
+.checkbox-container .checkmark::after{
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    width: 5px;
+    height: 10px;
+    left: 8px;
+    top: 4px;
+    transform: rotate(45deg);
+}
+
+.signup-btn{
+    display: block;
+    width: 100%;
+    background: var(--primary-blue);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.signup-btn:hover{
+    background: #4C70FF;
+    cursor: pointer;
+}
+
+@media screen and (min-width:900px) {
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left,
+    .right{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+    .left{
+        position: relative;
+    }
+    /* .left .copy{
+        border-right: solid 1.5px #acadad;
+    } */
+    .middle-line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .middle-line img{
+        display: block;     
+    }
+}
+
+@media screen and (max-width:900px) {
+    .left {
+        min-height: 320px;
+    }
+    .left img{
+        width: 50%;
+        margin-top: 20px;
+    }
+    .middle-line{
+        display: none;
+    }
+}
+
+
+.forgot-pass{
+    color: #66BCE8;
+}
+.btn-container{
+    margin-top: 30px ;
+}
